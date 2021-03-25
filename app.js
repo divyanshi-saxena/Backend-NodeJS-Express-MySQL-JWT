@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
+// please write comments as well
 app.get('/', (req, res) => {
     res.json({
         success: 1,
