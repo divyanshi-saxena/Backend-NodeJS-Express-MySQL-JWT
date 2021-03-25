@@ -1,0 +1,29 @@
+{
+  "name": "backend-nodejs-express-mysql-jwt",
+  "version": "1.0.0",
+  "description": "RESTful APIs in Node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshi-saxena/Backend-NodeJS-Express-MySQL-JWT.git"
+  },
+  "author": "Divyanshi Saxena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyanshi-saxena/Backend-NodeJS-Express-MySQL-JWT/issues"
+  },
+  "homepage": "https://github.com/divyanshi-saxena/Backend-NodeJS-Express-MySQL-JWT#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
