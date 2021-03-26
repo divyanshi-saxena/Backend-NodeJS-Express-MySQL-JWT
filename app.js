@@ -1,13 +1,12 @@
 const express = require('express')
+const userRouter = require('./api/users/user.router')
+
 const app = express()
 require('dotenv').config()
-// please write comments as well
-app.get('/', (req, res) => {
-    res.json({
-        success: 1,
-        message: 'successful api request'
-    })
-})
+
+app.use(express.json())
+app.use('/api/users', userRouter)
+
 app.listen(process.env.APP_PORT, () => {
-    console.log('server started')
+    console.log(`server running at port ${process.env.APP_PORT}`)
 })
