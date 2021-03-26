@@ -44,9 +44,18 @@ module.exports = {
         const query = `delete from user where id=?`
         pool.query(query, [data.id], (error, results, fields) => {
             if (error) {
-                    return callback(error)
-                }
-                return callback(null, results[0])
+                return callback(error)
+            }
+            return callback(null, results[0])
+        })
+    },
+    getUserByEmail: (email, callback) => {
+        const query = `select * from user where email=?`
+        pool.query(query, [email], (error, results, fields) => {
+            if (error) {
+                return callback(error)
+            }
+            return callback(null, results[0])
         })
     }
 }
