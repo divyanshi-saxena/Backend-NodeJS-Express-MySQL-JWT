@@ -12,7 +12,7 @@ module.exports = {
             }
         )
     },
-    getUsers: callback => {
+    getUsers: (callback) => {
         const query = `select id, firstname, lastname, gender, email, mobile from user`
         pool.query(query, [], (error, results, fields) => {
             if (error) {

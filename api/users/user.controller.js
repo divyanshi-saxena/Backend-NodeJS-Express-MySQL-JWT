@@ -68,7 +68,7 @@ module.exports = {
                     message: "Server error"
                 })
             }
-            if (!result) {
+            if (!results) {
                 return res.status(204).json({
                     success: 0,
                     message: 'Record not found!'
